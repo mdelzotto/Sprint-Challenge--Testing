@@ -14,6 +14,7 @@ function get(id) {
 }
 
 async function create(game) {
-  const [ id ] = await db('games').insert(game);
-  return get(id);
+  const [id] = await db('games').insert(game);
+  const newUser = await db('games').select('*').where({ id }).first();
+  return newUser
 }
