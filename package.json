@@ -4,7 +4,7 @@
   "description": "Testing Sprint Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest --watch --verbose",
     "start": "nodemon index.js"
   },
   "repository": {
@@ -31,6 +31,6 @@
   "devDependencies": {
     "@testing-library/react": "^8.0.4",
     "jest": "^24.8.0",
-    "supertest": "^3.3.0"
+    "supertest": "^3.4.2"
   }
 }

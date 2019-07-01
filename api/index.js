@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/games/', gamesRoutes)
+app.use('/games', gamesRoutes)
 
 app.get("/", (req, res) => {
   res.status(200).json({
